@@ -4,53 +4,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>My Professional Portfolio</title>
-
-  <meta name="description"
-    content="Explore my BBA portfolio, business interests, skills and projects.">
- <link rel="stylesheet" href="style.css"> 
+  <meta name="description" content="Explore my BBA portfolio, business interests, skills and projects.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>BBA Student | Finance | Marketing | Business</p>
+  <nav class="navbar">
+    <a href="#home" class="logo">My Portfolio<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+    <h1>Hello, I'm a <span>BBA Student</span></h1>
+    <p class="hero-text">
+      Exploring Finance, Marketing and Business Management
+      through learning, creativity and practical projects.
+    </p>
+    <a href="#projects" class="primary-btn">Explore My Projects ↗</a>
   </header>
 
   <main>
-    <section>
+    <section id="about">
+      <p class="section-label">GET TO KNOW ME</p>
       <h2>About Me</h2>
       <p>
-        Hello! I am a BBA student interested in business,
-        finance, marketing and management. I am building my
-        skills through learning and practical projects.
+        I am a BBA student interested in finance, marketing
+        and management. I enjoy learning how businesses work
+        and developing practical skills through academic
+        assignments and business projects.
       </p>
     </section>
 
-    <section>
+    <section id="skills">
+      <p class="section-label">WHAT I'M LEARNING</p>
       <h2>My Skills</h2>
-      <ul>
-        <li>Business Fundamentals</li>
-        <li>Marketing Concepts</li>
-        <li>Financial Concepts</li>
-        <li>Microsoft Excel</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-card">Business Fundamentals</div>
+        <div class="skill-card">Marketing Concepts</div>
+        <div class="skill-card">Financial Concepts</div>
+        <div class="skill-card">Microsoft Excel</div>
+      </div>
     </section>
 
-    <section>
-      <h2>My Projects</h2>
-      <p>My academic and business projects will appear here.</p>
+    <section id="projects">
+      <p class="section-label">MY WORK</p>
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-number">01</span>
+          <h3>Business & Brand Project</h3>
+          <p>Exploring branding, product ideas and business promotion.</p>
+          <span class="project-tag">Business</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">02</span>
+          <h3>Customer Analysis</h3>
+          <p>Learning how customer data can support business decisions.</p>
+          <span class="project-tag">Excel & Analysis</span>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">03</span>
+          <h3>AI in Modern Business</h3>
+          <p>Exploring how artificial intelligence can help businesses.</p>
+          <span class="project-tag">Research</span>
+        </article>
+      </div>
+      <p class="project-note">
+        These are portfolio summaries of academic work. Add your
+        actual project details as you complete or refine each project.
+      </p>
     </section>
 
-    <section>
+    <section id="contact" class="contact-section">
+      <p class="section-label">LET'S CONNECT</p>
       <h2>Contact Me</h2>
-      <p>Email: your.email@example.com</p>
+      <p>Have an opportunity or project idea? I'd be happy to connect.</p>
+      <a class="primary-btn" href="mailto:your.email@example.com">
+        Send Me an Email ↗
+      </a>
+      <p class="email-note">Replace this sample email with your real email address.</p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 My Portfolio</p>
+    <p>© 2026 My Portfolio | Built with HTML & CSS</p>
   </footer>
 
 </body>
