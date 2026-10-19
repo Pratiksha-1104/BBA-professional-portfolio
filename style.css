@@ -1124,3 +1124,39 @@ a:focus-visible {
     transition: none !important;
   }
 }
+
+/* Final layout adjustments */
+.hero {
+  min-height: auto;
+  padding-top: 55px;
+  padding-bottom: 45px;
+  gap: 35px;
+}
+
+.hero h1 {
+  max-width: 650px;
+  font-size: clamp(36px, 4.2vw, 54px);
+  letter-spacing: -1px;
+  overflow-wrap: normal;
+}
+
+#about {
+  padding-top: 45px;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+@media (min-width: 1000px) {
+  .hero h1 {
+    white-space: nowrap;
+    font-size: clamp(34px, 3.7vw, 52px);
+  }
+}
+
+@media (max-width: 650px) {
+  .hero h1 {
+    white-space: normal;
+  }
+}
