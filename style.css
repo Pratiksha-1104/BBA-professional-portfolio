@@ -301,3 +301,104 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Updated Professional Hero Section ===== */
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #0b1f3a, #142d4e);
+    color: #ffffff;
+}
+
+.hero .hero-label {
+    color: #e0b85a;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1.2;
+    margin: 0 auto 20px;
+    max-width: 900px;
+}
+
+.hero h1 span {
+    color: #e0b85a;
+}
+
+.hero h2 {
+    font-size: clamp(1.15rem, 2.5vw, 1.7rem);
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 auto 20px;
+    max-width: 750px;
+    color: #f4ead5;
+}
+
+.hero > p:not(.hero-label) {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #edf1f7;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border: 2px solid #e0b85a;
+    border-radius: 6px;
+    background: #e0b85a;
+    color: #0b1f3a;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.hero-buttons .btn:hover {
+    background: transparent;
+    color: #ffffff;
+}
+
+/* Mobile Hero Layout */
+@media (max-width: 600px) {
+    .hero {
+        padding: 65px 18px;
+    }
+
+    .hero .hero-label {
+        font-size: 0.72rem;
+        letter-spacing: 1.3px;
+        line-height: 1.7;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.15rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        text-align: center;
+    }
+}
