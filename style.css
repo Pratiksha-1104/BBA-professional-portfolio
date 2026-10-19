@@ -1160,3 +1160,55 @@ a:focus-visible {
     white-space: normal;
   }
 }
+
+/* Final portfolio spacing polish */
+.section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.hero {
+  min-height: auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+#about {
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+
+#learning {
+  min-height: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+#learning .section-heading {
+  max-width: 700px;
+}
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.info-card {
+  height: 100%;
+}
+
+@media (max-width: 650px) {
+  .section {
+    padding: 40px 6%;
+  }
+
+  .hero {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  #about,
+  #learning {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
